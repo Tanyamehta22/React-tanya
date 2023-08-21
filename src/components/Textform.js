@@ -5,12 +5,14 @@ export default function Textform(props) {
         console.log("Uppercase was clicked" + text);
         let newText = text.toUpperCase();
         setText(newText)
+        props.showAlert("Convertes to uppercase!,success");
     }
 
     const handleLoClick = ()=>{
       
       let newText = text.tolowerCase();
       setText(newText)
+      props.showAlert("Convertes to Lowercase!,success");
 
   }
   
@@ -18,10 +20,12 @@ export default function Textform(props) {
       
     let newText =('');
     setText(newText)
+    props.showAlert("Cleared!,success");
 }
     const handleUpChange = (event)=> {
         console.log("On change");
         setText(event.target.value);
+         
     }
 
     const handleCopy = ()=>{
@@ -30,11 +34,14 @@ export default function Textform(props) {
       text.select();
       text.setSelectionRange(0,9999);
       navigator.clipboard.writeText(text.value);
+      props.showAlert("Copied!,success");
     }
 
     const handleExtraSpace = ()=> {
       let newText = text.split(/[ ]+/);
       setText(newText.join(" "))
+      props.showAlert("Removed extra space!,success");
+
     }
     const [text, setText] = useState('');
     // text = "new text"; // wrong way to change the state
