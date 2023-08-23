@@ -4,6 +4,13 @@ import Navbar from './components/Navbar';
 import Textform from './components/Textform';
 import React, {useState} from 'react';
 import alert from './components/alert'; 
+import About from "./components/About";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
  
 
  
@@ -49,17 +56,22 @@ function App() {
    
   return (
     <>
-     
+<Router>    
 <Navbar title = "TextUtils"  mode ={mode} toggleMode={toggleMode}/> 
 <alert alert={alert}/> 
 <div className="container my-3">
-
-
-<Textform showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
-{/* <About/> */}
-</div>
-
-      </>
+ <Switch>
+   */}
+          <Route exact path="/about">
+            <About />
+          </Route>
+          <Route exact path="/">
+            <Textform showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
+          </Route>
+        </Switch> 
+        </div>
+</Router> 
+ </>
     
   );
 }
