@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/React-tanya/static/css/main.2543b9d3.css",
+    "main.js": "/React-tanya/static/js/main.4e2b3c2a.js",
+    "static/js/787.719ec76d.chunk.js": "/React-tanya/static/js/787.719ec76d.chunk.js",
+    "static/media/logo.svg": "/React-tanya/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/React-tanya/index.html",
+    "main.2543b9d3.css.map": "/React-tanya/static/css/main.2543b9d3.css.map",
+    "main.4e2b3c2a.js.map": "/React-tanya/static/js/main.4e2b3c2a.js.map",
+    "787.719ec76d.chunk.js.map": "/React-tanya/static/js/787.719ec76d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2543b9d3.css",
+    "static/js/main.4e2b3c2a.js"
+  ]
+}
